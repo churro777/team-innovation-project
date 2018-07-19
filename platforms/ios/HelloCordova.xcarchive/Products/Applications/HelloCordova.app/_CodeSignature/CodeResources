@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		vVaMRyu+Q/o83PwmiNOmSY4Oh/c=
+		CzTfNMdkOF6DWAwn/MPqdFB7ux4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		eRx9s2QM2zkcgYb5WxJ9A0habtw=
+		Rz/kNGGFGlLRYFqaPjbp2FLcBlU=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		2PyzCXeYyQhtYcF8w8J5Yst5K+E=
+		VthM2Cr0LW4ng+LmEPRxDPbIGfU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		rHMwr3aObPyaEjZFFWNY1/aYTo0=
+		71YAq2E0Bhr9gZfSFKD/Bc1H3xU=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -294,15 +294,19 @@
 		</data>
 		<key>www/vehicle/car-buy-service.html</key>
 		<data>
-		avmc2LCAFhVUu5uNC9JU9TQF0OY=
+		RQNrUtQd2SR95nSx5FdubmQkjug=
 		</data>
 		<key>www/vehicle/car-truck.html</key>
 		<data>
-		zXoiHnIebxKXwOOtg5yeIFE5Uuo=
+		t6jfXqTOoi+aPkGeVh7f42IGwrA=
 		</data>
 		<key>www/vehicle/commerical-farm.html</key>
 		<data>
 		TTsVWRyVyxNW511TjoH/8psbm8A=
+		</data>
+		<key>www/vehicle/extended-vech-protect.html</key>
+		<data>
+		b5AJcCyi+QrrxsYYaRJX2TFBRbg=
 		</data>
 		<key>www/vehicle/motorcycle.html</key>
 		<data>
@@ -547,22 +551,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vVaMRyu+Q/o83PwmiNOmSY4Oh/c=
+			CzTfNMdkOF6DWAwn/MPqdFB7ux4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KI/BkhxLbn/vfMmuSfYG0vb2roRKQrTnLvX8tU/hA8g=
+			mAyDDLdqMOkr7q7DUAobC9EY7RqUY/HNp8nS8gAEMyo=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eRx9s2QM2zkcgYb5WxJ9A0habtw=
+			Rz/kNGGFGlLRYFqaPjbp2FLcBlU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zeKwWRlbu89S99B5S+NkDsu4Z2KfONXBw7ZB+neVWPw=
+			+bxNfknf0jvjeCLArnbLxw0umhVufEQAH/Dl3E5+Ld8=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -580,11 +584,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2PyzCXeYyQhtYcF8w8J5Yst5K+E=
+			VthM2Cr0LW4ng+LmEPRxDPbIGfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dqWwQUV2NrZkK0uhgXOrgaRXZb8b5zFbkyL53aZCm7E=
+			IjLhmXNrhS2XxqYp4nyHAQOIbzlWbArxCbz166mdTD4=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -767,11 +771,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rHMwr3aObPyaEjZFFWNY1/aYTo0=
+			71YAq2E0Bhr9gZfSFKD/Bc1H3xU=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Leg9TfPLJhhv1S31rTc0aNgzpnYdCzPcMZIuHCByqk=
+			Plhz+KwMYlg30r7eBWdSFkkJ9mHgQyTl3VGItp5sbL8=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -1097,22 +1101,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			avmc2LCAFhVUu5uNC9JU9TQF0OY=
+			RQNrUtQd2SR95nSx5FdubmQkjug=
 			</data>
 			<key>hash2</key>
 			<data>
-			wHs23tsRTgdClNyufguucztSKXjQfvVH9eMZqiOVCvQ=
+			3d24H1z2w3ykAlJiKMl3DTDQmFys0iYmn1K+JuGAIiI=
 			</data>
 		</dict>
 		<key>www/vehicle/car-truck.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zXoiHnIebxKXwOOtg5yeIFE5Uuo=
+			t6jfXqTOoi+aPkGeVh7f42IGwrA=
 			</data>
 			<key>hash2</key>
 			<data>
-			he8gVMbHi9SslwVBSXvbSt+Y6iOfSGHF1lhvK9g5zIU=
+			a6dZ855hk7AI7bVpJuLteva8iCotj4fhT8xGLFDvQDg=
 			</data>
 		</dict>
 		<key>www/vehicle/commerical-farm.html</key>
@@ -1124,6 +1128,17 @@
 			<key>hash2</key>
 			<data>
 			R1pNo1/ukWSQH8FyEb5SKX+dRyyHbOWfHwwva8R/Bic=
+			</data>
+		</dict>
+		<key>www/vehicle/extended-vech-protect.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b5AJcCyi+QrrxsYYaRJX2TFBRbg=
+			</data>
+			<key>hash2</key>
+			<data>
+			f8gNtnJl2PjC49ATyQg6j7ud4T7GDSZ1EYwAmYO9XPo=
 			</data>
 		</dict>
 		<key>www/vehicle/motorcycle.html</key>
