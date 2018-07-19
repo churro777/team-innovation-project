@@ -18,7 +18,7 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
@@ -26,12 +26,12 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -44,3 +44,40 @@ var app = {
 };
 
 app.initialize();
+
+
+function PageVisit(page, time) {
+    this.page = page;
+    this.time = time;
+}
+
+function Category(name, totalPages) {
+    this.name = name;
+    this.totalPages = totalPages;
+    this.pagesVisitedSoFar = 0;
+    this.pagesVisited = [];
+    
+    this.addPage = function (page) {
+        this.pagesVisited.push(page);
+    }
+    
+    this.pageWasVisited = function() {
+        this.pagesVisitedSoFar = this.pagesVisitedSoFar + 1;
+    }
+    
+}
+
+dataTracking = {"pagesVisited":[], "categories":[new Category("vehicle",10)]};
+
+localStorage.setItem("data", dataTracking);
+
+
+
+function visited(page){
+    var visit = new PageVisit(page, new Date);
+    localStorage.data.pagesVisited.push(visit);
+}
+
+
+
+
