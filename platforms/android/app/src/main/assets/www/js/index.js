@@ -45,39 +45,87 @@ var app = {
 
 app.initialize();
 
+//////////////////////////////////////////////////////////////////////////
 
+// PageVisit class
+// stores a file path and a time stamp on when user visited page
 function PageVisit(page, time) {
     this.page = page;
     this.time = time;
 }
-
+// Category class
+// stores a category's name, total pages visited, what those pages are
 function Category(name, totalPages) {
     this.name = name;
     this.totalPages = totalPages;
     this.pagesVisitedSoFar = 0;
     this.pagesVisited = [];
-    
+
     this.addPage = function (page) {
         this.pagesVisited.push(page);
-    }
-    
-    this.pageWasVisited = function() {
         this.pagesVisitedSoFar = this.pagesVisitedSoFar + 1;
     }
-    
 }
 
-dataTracking = {"pagesVisited":[], "categories":[new Category("vehicle",10)]};
+// data holds all data from the user
+data = {
+    "pagesVisited": [],
+    "categories": [new Category("vehicle", 10), new Category("property", 10), new Category("family", 10),
+                   new Category("finances", 10), new Category("job", 10), new Category("vacation", 10)]
+};
 
-localStorage.setItem("data", dataTracking);
 
 
-
-function visited(page){
+// will fire at teh begining of every page
+function visited(page) {
     var visit = new PageVisit(page, new Date);
-    localStorage.data.pagesVisited.push(visit);
+    var data = JSON.parse(localStorage.data);
+    data.pagesVisited.push(visit);
+    localStorage.setItem("data", JSON.stringify(data));
+    
+    console.log(page + " was visited")
+    console.log(JSON.parse(localStorage.data))
 }
 
+// will only fire on the content pages
+function visitCategoryPage(categoryName, page) {
+    var category = getCategoryObject(categoryName);
 
+    if (!doesCategoryContainsPage(category.pagesVisited, page)) {
+        category.addPage(page);
+    }
 
+}
 
+// get the category from data based off the name
+function getCategoryObject(categoryname) {
+    for (i = 0; i < 6; i++) {
+        if (localStorage.data.categories[i].name == categoryName) {
+            return localStorage.data.categories[i];
+        }
+    }
+}
+
+// check if the page is already in the visted page list
+function doesCategoryContainsPage(pageList, page) {
+    for (i = 0; i < pageList.size; i++) {
+        if (pageList[i] == page) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function isPageActuallyRead(categoryName, page, seconds) {
+    setTimeout(visitCategoryPage(categoryName, page), (seconds * 1000));
+}
+
+function startTracking() {
+    console.log("tracking started");
+    // save the data on the device
+    localStorage.setItem("data", JSON.stringify(data));
+    console.log("data object set");
+    console.log(JSON.parse(localStorage.data))
+    visited("index");
+}
