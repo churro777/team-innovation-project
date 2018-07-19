@@ -79,7 +79,12 @@ data = {
 // will fire at teh begining of every page
 function visited(page) {
     var visit = new PageVisit(page, new Date);
-    localStorage.data.pagesVisited.push(visit);
+    var data = JSON.parse(localStorage.data);
+    data.pagesVisited.push(visit);
+    localStorage.setItem("data", JSON.stringify(data));
+    
+    console.log(page + " was visited")
+    console.log(JSON.parse(localStorage.data))
 }
 
 // will only fire on the content pages
@@ -119,6 +124,8 @@ function isPageActuallyRead(categoryName, page, seconds) {
 function startTracking() {
     console.log("tracking started");
     // save the data on the device
-    localStorage.setItem("data", data);
+    localStorage.setItem("data", JSON.stringify(data));
+    console.log("data object set");
+    console.log(JSON.parse(localStorage.data))
     visited("index");
 }
