@@ -81,7 +81,23 @@ function startTracking() {
     visited("index");
 }
 
-function feelingLucky(){
-    var randomPage = Math.random * 27;
-    
+function feelingLucky() {
+
+
+    var sites = [
+"https://mobile.usaa.com/inet/ent_mobile_storefront/StoreFrontApp/SubProductDetailPage?key=insurance-mobile-phone-protection-product",
+"https://mobile.usaa.com/inet/ent_mobile_storefront/StoreFrontApp/SubProductDetailPage?key=shopping-discounts-mobile-contractor-connection-product&wa_ref=asc_mobileSD_HIN",
+"https://mobile.usaa.com/inet/wc/insurance-mobile-homeowners-product",
+"https://mobile.usaa.com/inet/wc/insurance-mobile-flood-product",
+"https://mobile.usaa.com/inet/wc/bank-real-estate-mortgage-loans",
+"https://mobile.usaa.com/inet/wc/insurance-home-valuable-personal-property",
+"https://mobile.usaa.com/inet/wc/insurance-mobile-life-product",
+"https://mobile.usaa.com/inet/wc/banking-mobile-creditcheck-id-monitoring-product",
+"https://mobile.usaa.com/inet/ent_mobile_storefront/StoreFrontApp/SubProductDetailPage?key=insurance-mobile-umbrella-insurance-main",
+"https://mobile.usaa.com/inet/wc/shopping-discounts-mobile-adt-product?wa_ref=asc_mobileSD_adt",
+"https://mobile.usaa.com/inet/wc/shopping-discount-mobile-pods-main?wa_ref=asc_mobileSD_PODS"
+]
+    var amountOfSites = sites.length;
+    var randomPage = Math.floor(Math.random() * amountOfSites);
+    window.open(sites[randomPage], "_self");
 }
