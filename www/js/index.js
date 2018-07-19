@@ -82,7 +82,7 @@ function startTracking() {
 }
 
 function feelingLucky() {
-
+    visited("index/feeling-lucky");
 
     var sites = [
 "https://mobile.usaa.com/inet/ent_mobile_storefront/StoreFrontApp/SubProductDetailPage?key=insurance-mobile-phone-protection-product",
