@@ -80,3 +80,8 @@ function startTracking() {
     console.log(JSON.parse(localStorage.data))
     visited("index");
 }
+
+function feelingLucky(){
+    var randomPage = Math.random * 27;
+    
+}
